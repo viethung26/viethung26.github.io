@@ -26,7 +26,7 @@ function call() {
         })
     })
 }
-let peer = new Peer({key: 'peerjs', host: 'hung-videocall.herokuapp.com', port: 9000})
+let peer = new Peer({key: 'peerjs', port: 9000})
 peer.on('open', id=> {
     $id.innerText = id
 })
